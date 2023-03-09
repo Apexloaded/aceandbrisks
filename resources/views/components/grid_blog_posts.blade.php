@@ -1,0 +1,1 @@
+@livewire('grid-blog-posts')

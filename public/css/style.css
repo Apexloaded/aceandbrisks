@@ -1,0 +1,190 @@
+button { outline:none !important }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.logo, h1, h2, h3, h4, h5, h6, p { margin: 0 !important; }
+p {font-weight: 300; font-size: 15px;}
+button, a { outline: none !important;}
+.thumbnail-user {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.zoom:hover {
+    transition: 1s;
+    transform: scale(1.6);
+    cursor: pointer;
+}
+
+/***************************************************************
+**@Banner
+***************************************************************/
+.banner1 {
+    background-image: url('../images/banner/banner1.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner2 {
+    background-image: url('../images/banner/banner2.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner3 {
+    background-image: url('../images/banner/banner1.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner4 {
+    background-image: url('../images/banner/banner1.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inner-banner {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.inner-banner button { border-radius: 25px; padding:5px 30px; margin-top: 10px;}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 449px) {
+    .banner1, .banner2, .banner3, .banner4 {
+        background-size: 150% 100%;
+        background-position: center;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 639px) {
+    .content {
+        min-width: inherit !important;
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 991px) {
+    .content {
+        min-width: 150rem !important;
+        width: 150rem;
+    }
+}
+
+
+/*****************************************************************
+**@Top Rated
+*****************************************************************/
+.img-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container .title {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    background:rgba(0,0,0,0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-container:hover {
+    cursor: pointer;
+    transition: 5s;
+}
+
+.img-container:hover .title {
+    display: none;
+    transition: 5s;
+    transition-delay: 1s;
+}
+
+/***************************************************************
+**@Grid Blog Post
+***************************************************************/
+.img-holder {
+    position: relative;
+    overflow: hidden;
+}
+.archpost img {transition: 1s; transform: scale(1.6);}
+.archpost:hover h1 {cursor: pointer;}
+.archpost:hover img {
+    transition: 1s;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+/***************************************************************
+**@List Blog Post
+***************************************************************/
+.project-thumbnail-list {
+    width: auto;
+    max-width: 100%;
+    transform: scale(1.6);
+}
+
+@media only screen and (max-width: 640px) {
+    .project-thumbnail-list {
+        min-height: fit-content;
+        max-width: 100%;
+    }
+}
+
+.project-details {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.project-details .mv-bottom {
+    position: sticky;
+    top: 100%;
+}
+
+/**************************************************************
+**Project Details Page
+***************************************************************/
+.fullimg {overflow: hidden;}
+.fullimg img {
+    width: fit-content;
+    height: fit-content;
+}
+.thumbnail {
+    height: 100%;
+}
+
+/***************************************************************
+**About Us Page
+***************************************************************/
+.about-banner {
+    background-image: url('../images/banner/architect.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.about-banner .inner-banner {
+    background: rgba(0,0,0,0.5);
+}
+.about-banner .inner-banner button { border-radius: 25px; padding:5px 30px; margin-top: 10px;}
+
+/***************************************************************
+*Contact Us
+***************************************************************/
+.support {
+    background-image: url('../images/contact.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
